@@ -1,0 +1,160 @@
+﻿{
+  "Info": {
+    "Class": "clsVCSIndex",
+    "Description": "Version Control System Index"
+  },
+  "Items": {
+    "MergeBuildDate": null,
+    "FullBuildDate": null,
+    "ExportDate": "2026-04-04T22:38:14.000Z",
+    "FullExportDate": "2026-04-04T22:38:14.000Z",
+    "OptionsHash": "e599266",
+    "LastMergedCommit": "",
+    "Components": {
+      "DB Connections": {
+        "db-connection.json": {
+        }
+      },
+      "DB Properties": {
+        "dbs-properties.json": {
+          "FileHash": "8bee074",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "57da258"
+        }
+      },
+      "Doc Properties": {
+        "documents.json": {
+          "FileHash": "4c860a3",
+          "ExportDate": "2026-04-04T22:38:13.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "8741c3f"
+        }
+      },
+      "Forms": {
+        "LoginF.bas": {
+          "FileHash": "3c88eb0",
+          "OtherHash": "f0f53a5",
+          "ExportDate": "2026-04-04T22:38:13.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "6e1f20a"
+        },
+        "ManageUsersF.bas": {
+          "FileHash": "19514ad",
+          "ExportDate": "2026-04-04T22:38:13.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "1eba114"
+        }
+      },
+      "Hidden Attributes": {
+        "hidden-attributes.json": {
+        }
+      },
+      "Nav Pane Groups": {
+        "nav-pane-groups.json": {
+          "FileHash": "8b001dd",
+          "ExportDate": "2026-04-04T22:38:13.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "f105ae8"
+        }
+      },
+      "Proj Properties": {
+        "proj-properties.json": {
+        }
+      },
+      "Project": {
+        "project.json": {
+          "FileHash": "9fe41ad",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "8a204d5"
+        }
+      },
+      "Shared Images": {
+        "CCSEA-SC.json": {
+          "FileHash": "ab4b59b",
+          "OtherHash": "d6123cc",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "bc2d90e"
+        },
+        "ERD_ccsea_archiving_Logical.json": {
+          "FileHash": "a65d815",
+          "OtherHash": "6f283c3",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": "2026-03-15T02:57:30.000Z",
+          "FilePropertiesHash": "9393bbb"
+        }
+      },
+      "Tables": {
+        "Approval.json": {
+          "FileHash": "d93d30f",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "1f570ac"
+        },
+        "Document.json": {
+          "FileHash": "b964d66",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "1f570ac"
+        },
+        "Document_Request.json": {
+          "FileHash": "add369f",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "984105f"
+        },
+        "Role.json": {
+          "FileHash": "56b768f",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "807f1d0"
+        },
+        "Session Log.json": {
+          "FileHash": "43cb97f",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "e2254dd"
+        },
+        "Transaction_History.json": {
+          "FileHash": "b4a42bc",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "689c837"
+        },
+        "User.json": {
+          "FileHash": "c96842d",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "807f1d0"
+        }
+      },
+      "Themes": {
+        "Office Theme.thmx": {
+          "FileHash": "62b547d",
+          "OtherHash": "b9a3f48",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "67ea44b"
+        }
+      },
+      "VB Project": {
+        "vbe-project.json": {
+          "FileHash": "eca187f",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "2a04ce0"
+        }
+      },
+      "VBE References": {
+        "vbe-references.json": {
+          "FileHash": "c8d14f7",
+          "ExportDate": "2026-04-04T22:38:12.000Z",
+          "SourceModified": null,
+          "FilePropertiesHash": "e526224"
+        }
+      }
+    }
+  }
+}
