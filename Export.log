@@ -1,0 +1,161 @@
+﻿-------------------------------------
+Beginning Export of Source Files
+CCSEA-Student-Council-Archiving_frontend.accdb
+VCS Version 4.1.2
+Full Path: E:\JepPersonal\School\BSCS - 2nd Year\2nd Sem\InforMan\System Proposal\Access System\CCSEA-Student-Council-Archiving_frontend.accdb
+Export Folder: E:\JepPersonal\School\BSCS - 2nd Year\2nd Sem\InforMan\System Proposal\Access System\CCSEA-Student-Council-Archiving_frontend.accdb.src\
+Performing Full Export
+08/04/2026 2:10:52 am
+-------------------------------------
+Scanning source files...
+No db connections found in this database.
+No vbe forms found in this database.
+No proj properties found in this database.
+No saved specs found in this database.
+No modules found in this database.
+No commandbars found in this database.
+No imex specs found in this database.
+No macros found in this database.
+No reports found in this database.
+No table data found in this database.
+No table data macros found in this database.
+No relations found in this database.
+No hidden attributes found in this database.
+-------------------------------------
+Exporting project...          
+  CCSEA-Student-Council-Archiving_frontend.accdb
+[1]
+-------------------------------------
+Exporting vb project...       
+  CCSEA-Student-Council-Archiving
+[1]
+-------------------------------------
+Exporting vbe references...   
+  stdole
+[2]
+-------------------------------------
+Exporting shared images...    
+  1_eye_icon
+  CCSEA-SC
+  closed-eye
+  ERD_ccsea_archiving_Logical
+  eye
+  eye_icon
+[6]
+-------------------------------------
+Exporting themes...           
+  Office Theme
+[1]
+-------------------------------------
+Exporting db properties...    
+  Database Properties (DAO)
+[52]
+-------------------------------------
+Exporting tables...           
+  Approval
+  Document
+  Document_Request
+  Role
+  Session_Log
+  Transaction_History
+  User
+[7]
+-------------------------------------
+Exporting queries...          
+  LogInQ
+    Sanitized in 0.003 seconds.
+  LogInQ (SQL)
+  UserInfoQ
+    Sanitized in 0.001 seconds.
+  UserInfoQ (SQL)
+[2]
+-------------------------------------
+Exporting forms...            
+  AdminDashboardF (Experiment)
+    Sanitized in 0.004 seconds.
+  ManageUsersF
+    Sanitized in 0.007 seconds.
+  AdminNavigationF
+    Sanitized in 0.006 seconds.
+  LoginF
+    Sanitized in 0.005 seconds.
+[4]
+-------------------------------------
+Exporting doc properties...   
+  Database Documents
+[2]
+-------------------------------------
+Exporting nav pane groups...  
+  Groups
+[1]
+-------------------------------------
+Done. (1.46 seconds)
+
+--------------------------------------------------
+                PERFORMANCE REPORTS
+--------------------------------------------------
+Category                      Count     Seconds
+--------------------------------------------------
+Forms                         4         0.57
+DB Properties                 52        0.17
+Tables                        7         0.12
+Queries                       2         0.09
+Shared Images                 6         0.08
+Project                       1         0.04
+Nav Pane Groups               1         0.04
+Doc Properties                2         0.04
+VBE References                2         0.04
+VB Project                    1         0.03
+Themes                        1         0.03
+CommandBars                   0         0.02
+DB Connections                0         0.01
+Hidden Attributes             0         0.01
+Proj Properties               0         0.01
+Relations                     0         0.01
+IMEX Specs                    0         0.00
+Table Data Macros             0         0.00
+Table Data                    0         0.00
+VBE Forms                     0         0.00
+Saved Specs                   0         0.00
+Modules                       0         0.00
+Reports                       0         0.00
+Macros                        0         0.00
+--------------------------------------------------
+TOTALS:                       79        1.34
+--------------------------------------------------
+
+--------------------------------------------------
+Operations                    Count     Seconds
+--------------------------------------------------
+Convert to JSON               626       0.27
+Increment Progress            52        0.18
+Scan DB Objects               1         0.12
+Read File Bytes               7         0.08
+App.SaveAsText()              6         0.05
+Console Updates               3         0.04
+Sanitize File                 6         0.03
+Format SQL                    2         0.01
+Compute SHA256                85        0.01
+Write File                    28        0.01
+Get File Property Hash        26        0.01
+modFileAccess.VerifyPath      41        0.01
+Quick Count Files             1         0.01
+Check for linked table        7         0.01
+Get Modified Date             82        0.00
+Quick Count Objects           1         0.00
+Write Binary File             6         0.00
+Delete File                   7         0.00
+Get VBA Hash                  4         0.00
+Read File DevMode             4         0.00
+Save Query SQL                2         0.00
+Read File                     6         0.00
+Close Open Objects            1         0.00
+Export Theme                  1         0.00
+modFileAccess.GetUncPath      16        0.00
+Sanitize VBA Code             1         0.00
+Clear Files by Ext            6         0.00
+--------------------------------------------------
+Other Operations                        0.61
+--------------------------------------------------
+
+

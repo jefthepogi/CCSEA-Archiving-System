@@ -1,0 +1,13 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "Document_Request",
+    "Connect": ";DATABASE=rel:CCSEA-Student-Council-Archiving_backend_localcopy.accdb",
+    "SourceTableName": "Document_Request",
+    "Attributes": 1073741824,
+    "PrimaryKey": "[request_id]"
+  }
+}

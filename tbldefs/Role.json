@@ -1,0 +1,13 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "Role",
+    "Connect": ";DATABASE=rel:CCSEA-Student-Council-Archiving_backend_localcopy.accdb",
+    "SourceTableName": "Role",
+    "Attributes": 1073741824,
+    "PrimaryKey": "[role_id]"
+  }
+}
