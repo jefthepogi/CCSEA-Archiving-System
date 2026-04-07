@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "1_eye_icon",
+    "FileName": "1_eye_icon.svg",
+    "Extension": "svg",
+    "ContentHash": "f224cb9"
+  }
+}

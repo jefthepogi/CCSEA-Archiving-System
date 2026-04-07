@@ -1,0 +1,13 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "User",
+    "Connect": ";DATABASE=rel:CCSEA-Student-Council-Archiving_backend_localcopy.accdb",
+    "SourceTableName": "User",
+    "Attributes": 1073741824,
+    "PrimaryKey": "[user_id]"
+  }
+}

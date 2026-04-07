@@ -1,0 +1,13 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "Transaction_History",
+    "Connect": ";DATABASE=rel:CCSEA-Student-Council-Archiving_backend_localcopy.accdb",
+    "SourceTableName": "Transaction_History",
+    "Attributes": 1073741824,
+    "PrimaryKey": "[transaction_id]"
+  }
+}
