@@ -29,33 +29,55 @@ Private Sub EyeIcon_Click()
 End Sub
 
 Private Sub QuitBtn_Click()
-    DoCmd.Close acForm, Me.Name, acSaveNo
+    Quit
 End Sub
 
 Private Sub SignInBtn_Click()
-    Dim ID As Long, PW As String
+    Dim ID As Long, PW As String, PassVal As String
     ID = Nz(DLookup("user_id", "User", "username=""" & Me.UsernameField & """"), 0)
     If ID = 0 Then
         MsgBox "User not Found"
-        QuitBtn_Click
         Exit Sub
     End If
 
+    PassVal = Nz(Me.PasswordShown.Value, "")
     PW = Nz(DLookup("password", "User", "user_id=" & ID), "")
-    If PW <> Me.PasswordShown Then
+    If PW <> PassVal Or PassVal = "" Then
         MsgBox "Incorrect Password"
-        QuitBtn_Click
         Exit Sub
     End If
+
+    Dim rs As DAO.Recordset
+    Dim strSQL As String
+
+    strSQL = "SELECT User.first_name, User.last_name, Role.role_name " & _
+             "FROM User INNER JOIN Role ON User.role_id = Role.role_id " & _
+             "WHERE User.user_id =" & ID
+
+    Set rs = CurrentDb.OpenRecordset(strSQL)
+
 
     TempVars("UserID") = ID
-    TempVars("Username") = DLookup("first_name & ' ' & last_name", "User", "user_id=" & ID)
+    TempVars("UserName") = rs!last_name.Value & ", " & rs!first_name.Value
+    TempVars("UserRole") = rs!role_name.Value
+
+    rs.Close
 
     DoCmd.SetWarnings False
     DoCmd.OpenQuery "LogInQ"
     DoCmd.SetWarnings True
 
-    DoCmd.OpenForm "AdminNavigationF"
+    strSQL = "SELECT TOP 1 session_id " & _
+             "FROM Session_Log " & _
+             "WHERE user_id = " & ID & " " & _
+             "ORDER BY session_id DESC"
+
+    Set rs = CurrentDb.OpenRecordset(strSQL)
+    TempVars("SessionID") = rs!session_id.Value
+
+    Set rs = Nothing
+
+    DoCmd.OpenForm "NavigationF"
     DoCmd.Close acForm, Me.Name, acSaveNo
 
 End Sub

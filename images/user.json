@@ -4,9 +4,9 @@
     "Description": "Shared Image Gallery Item"
   },
   "Items": {
-    "Name": "ERD_ccsea_archiving_Logical",
-    "FileName": "ERD_ccsea_archiving_Logical.png",
+    "Name": "user",
+    "FileName": "user.png",
     "Extension": "png",
-    "ContentHash": "22a44d6"
+    "ContentHash": "0154b45"
   }
 }
