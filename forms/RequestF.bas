@@ -2,25 +2,27 @@
 VersionRequired =20
 Begin Form
     PopUp = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
     DividingLines = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     TabularFamily =0
-    BorderStyle =3
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
     GridY =10
-    Width =9354
+    Width =6576
     DatasheetFontHeight =11
-    ItemSuffix =48
+    ItemSuffix =42
     Left =3315
     Top =3030
     Right =14340
     Bottom =10920
+    Filter ="document_id = 1"
     RecSrcDt = Begin
-        0x7d7b75d10085e640
+        0x836918c60a86e640
     End
-    RecordSource ="User"
+    RecordSource ="Document"
     DatasheetFontName ="Inter"
     AllowDatasheetView =0
     FilterOnLoad =0
@@ -28,7 +30,7 @@ Begin Form
     DisplayOnSharePointSite =1
     DatasheetAlternateBackColor =15921906
     DatasheetGridlinesColor12 =0
-    FitToScreen =255
+    FitToScreen =1
     DatasheetBackThemeColorIndex =1
     BorderThemeColorIndex =3
     ThemeFontIndex =1
@@ -64,6 +66,35 @@ Begin Form
             GridlineThemeColorIndex =1
             GridlineShade =65.0
         End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            FontName ="Inter"
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+            UseTheme =1
+            Shape =1
+            Gradient =12
+            BackThemeColorIndex =4
+            BackTint =60.0
+            BorderLineStyle =0
+            BorderThemeColorIndex =4
+            BorderTint =60.0
+            ThemeFontIndex =1
+            HoverThemeColorIndex =4
+            HoverTint =40.0
+            PressedThemeColorIndex =4
+            PressedShade =75.0
+            HoverForeThemeColorIndex =0
+            HoverForeTint =75.0
+            PressedForeThemeColorIndex =0
+            PressedForeTint =75.0
+        End
         Begin TextBox
             AddColon = NotDefault
             FELineBreak = NotDefault
@@ -83,56 +114,26 @@ Begin Form
             GridlineThemeColorIndex =1
             GridlineShade =65.0
         End
-        Begin ComboBox
-            AddColon = NotDefault
-            TextFontFamily =0
-            BorderLineStyle =0
-            Width =1701
-            LabelX =-1701
-            FontSize =11
-            FontName ="Inter"
-            AllowValueListEdits =1
-            InheritValueList =1
-            ThemeFontIndex =1
-            BackThemeColorIndex =1
-            BorderThemeColorIndex =1
-            BorderShade =65.0
-            ForeThemeColorIndex =2
-            ForeShade =50.0
-            GridlineThemeColorIndex =1
-            GridlineShade =65.0
-        End
-        Begin Subform
-            BorderLineStyle =0
-            Width =1701
-            Height =1701
-            BorderThemeColorIndex =1
-            GridlineThemeColorIndex =1
-            GridlineShade =65.0
-            BorderShade =65.0
-            ShowPageHeaderAndPageFooter =1
-        End
         Begin EmptyCell
             Height =240
             GridlineThemeColorIndex =1
             GridlineShade =65.0
         End
         Begin FormHeader
-            Height =520
+            Height =850
             Name ="FormHeader"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
-            BackThemeColorIndex =2
-            BackTint =20.0
+            BackThemeColorIndex =4
             Begin
                 Begin Image
                     SizeMode =0
-                    Left =300
-                    Top =60
+                    Left =225
+                    Top =165
                     Width =690
-                    Height =460
+                    Height =502
                     Name ="Auto_Logo0"
+                    GroupTable =2
                     ImageData = Begin
                         0x89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7a ,
                         0xf4000000097048597300000b1300000b1301009a9c1800000a4f694343505068 ,
@@ -250,316 +251,170 @@ Begin Form
                         0x3bcb2b60cbfef7ff8eff1b00cffe37389e6f030b0000000049454e44ae426082
                     End
 
-                    LayoutCachedLeft =300
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =990
-                    LayoutCachedHeight =520
+                    LayoutCachedLeft =225
+                    LayoutCachedTop =165
+                    LayoutCachedWidth =915
+                    LayoutCachedHeight =667
+                    TabIndex =2
+                    LayoutGroup =1
+                    GroupTable =2
                 End
-                Begin Label
+                Begin TextBox
+                    Locked = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    OldBorderStyle =0
                     OverlapFlags =85
                     TextAlign =1
-                    Left =1050
-                    Top =60
-                    Width =990
-                    Height =460
-                    FontSize =18
-                    Name ="Auto_Header0"
-                    Caption ="User"
-                    LayoutCachedLeft =1050
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =2040
-                    LayoutCachedHeight =520
+                    IMESentenceMode =3
+                    Left =963
+                    Top =283
+                    Width =3555
+                    Height =292
+                    FontSize =10
+                    Name ="Text26"
+                    ControlSource ="title"
+
+                    LayoutCachedLeft =963
+                    LayoutCachedTop =283
+                    LayoutCachedWidth =4518
+                    LayoutCachedHeight =575
                     ColumnStart =1
                     ColumnEnd =1
-                    ThemeFontIndex =0
-                    BorderThemeColorIndex =2
-                    BorderTint =100.0
-                    ForeThemeColorIndex =2
+                    BackThemeColorIndex =0
+                    ForeThemeColorIndex =1
                     ForeTint =100.0
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5788
+                    Top =283
+                    Width =684
+                    Height =300
+                    TabIndex =1
+                    Name ="DocumentIDBox"
+                    ControlSource ="document_id"
+
+                    LayoutCachedLeft =5788
+                    LayoutCachedTop =283
+                    LayoutCachedWidth =6472
+                    LayoutCachedHeight =583
+                    BackThemeColorIndex =0
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    Begin
+                        Begin Label
+                            FontItalic = NotDefault
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =5159
+                            Top =283
+                            Width =585
+                            Height =300
+                            Name ="Label39"
+                            Caption ="id: "
+                            LayoutCachedLeft =5159
+                            LayoutCachedTop =283
+                            LayoutCachedWidth =5744
+                            LayoutCachedHeight =583
+                            BackThemeColorIndex =4
+                            ForeThemeColorIndex =1
+                            ForeTint =100.0
+                        End
+                    End
                 End
             End
         End
         Begin Section
-            CanGrow = NotDefault
-            Height =4195
+            Height =3401
             Name ="Detail"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
             Begin
-                Begin TextBox
-                    OverlapFlags =87
-                    TextAlign =3
-                    IMESentenceMode =3
-                    Left =566
-                    Top =685
-                    Width =789
-                    Height =345
-                    LeftMargin =44
-                    TopMargin =22
-                    RightMargin =44
-                    BottomMargin =22
-                    Name ="user_id"
-                    ControlSource ="user_id"
-                    BottomPadding =150
-
-                    LayoutCachedLeft =566
-                    LayoutCachedTop =685
-                    LayoutCachedWidth =1355
-                    LayoutCachedHeight =1030
-                    ColumnStart =1
-                    ColumnEnd =1
-                    Begin
-                        Begin Label
-                            OverlapFlags =93
-                            TextAlign =1
-                            Left =571
-                            Top =340
-                            Width =780
-                            Height =345
-                            LeftMargin =44
-                            TopMargin =22
-                            RightMargin =44
-                            BottomMargin =22
-                            Name ="Label0"
-                            Caption ="ID"
-                            BottomPadding =150
-                            LayoutCachedLeft =571
-                            LayoutCachedTop =340
-                            LayoutCachedWidth =1351
-                            LayoutCachedHeight =685
-                        End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5102
+                    Top =2437
+                    Width =1468
+                    Height =570
+                    Name ="RequestDocBtn"
+                    Caption =" Request"
+                    OnClick ="[Event Procedure]"
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0xb17d4af9b17d4a78b17d4a1800000000000000000000000000000000b17d4aff ,
+                        0xb17d4a5ab17d4aff000000000000000000000000000000000000000000000000 ,
+                        0xb17d4a81b17d4affb17d4af300000000000000000000000000000000b17d4a5a ,
+                        0xb17d4af9b17d4aff000000000000000000000000000000000000000000000000 ,
+                        0xb17d4a27b17d4af6b17d4a03b17d4ab7b17d4a6c0000000000000000b17d4aff ,
+                        0xb17d4affb17d4aff0000000000000000000000005f5f5f185f5f5f905f5f5fd2 ,
+                        0x5f5f5f1bb17d4a0cb17d4ab7b17d4affb17d4affb17d4a7b0000000000000000 ,
+                        0x000000000000000000000000000000005f5f5f395f5f5fed5f5f5ff95f5f5fc3 ,
+                        0x5f5f5f6300000000b17d4a87b17d4affb17d4affb17d4affb17d4a8700000000 ,
+                        0x0000000000000000000000005f5f5f0c5f5f5fde5f5f5fdb5f5f5f3600000000 ,
+                        0x3255d60c0000000000000000b17d4a8db17d4affb17d4affb17d4affb17d4a93 ,
+                        0x0000000000000000000000005f5f5f8a5f5f5ff95f5f5f27000000003255d62d ,
+                        0x3255d6873255d60c0000000000000000b17d4a90b17d4affb17d4affb17d4aab ,
+                        0xb17d4a12b17d4a03000000005f5f5fdb5f5f5fa5000000003255d61b3255d6e4 ,
+                        0x3255d6ff3255d67e3255d6030000000000000000b17d4a96b17d4aabb17d4a15 ,
+                        0xb17d4acfb17d4aa5000000005f5f5ff95f5f5f7e3255d6063255d6d23255d6cf ,
+                        0x3255d6333255d6ea3255d6633255d6060000000000000000b17d4a12b17d4acf ,
+                        0xb17d4affb17d4af0000000005f5f5fea5f5f5f99000000003255d6573255d615 ,
+                        0x000000003255d62d3255d6ea3255d6603255d60900000000b17d4a03b17d4aa2 ,
+                        0xb17d4afcb17d4a2a000000005f5f5fb15f5f5fe75f5f5f0c00000000696969f0 ,
+                        0x696969ff6969690f3255d6363255d6ed3255d6903255d61b0000000000000000 ,
+                        0x0000000000000000000000005f5f5f3c5f5f5fff5f5f5fba5f5f5f1200000000 ,
+                        0x696969a5696969ff6969690f3255d6423255d6de3255d6330000000000000000 ,
+                        0x000000000000000000000000000000005f5f5f6c5f5f5ff95f5f5fdc656565cd ,
+                        0x696969ff696969ff696969ff6969690f00000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000005f5f5f2d5f5f5fb4656565fa ,
+                        0x696969ff696969ff696969ff6969690f00000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x696969a5696969ff6969690f0000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000000000000696969f0 ,
+                        0x696969ff6969690f000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
                     End
+
+                    LayoutCachedLeft =5102
+                    LayoutCachedTop =2437
+                    LayoutCachedWidth =6570
+                    LayoutCachedHeight =3007
+                    PictureCaptionArrangement =5
+                    Overlaps =1
                 End
                 Begin TextBox
-                    OverlapFlags =215
-                    TextAlign =1
+                    OverlapFlags =85
                     IMESentenceMode =3
-                    Left =3118
-                    Top =680
-                    Width =2265
-                    Height =345
+                    Left =340
+                    Top =623
+                    Width =6236
+                    Height =1470
                     TabIndex =1
-                    LeftMargin =44
-                    TopMargin =22
-                    RightMargin =44
-                    BottomMargin =22
-                    Name ="username"
-                    ControlSource ="username"
-                    BottomPadding =150
+                    Name ="NoteBox"
 
-                    LayoutCachedLeft =3118
-                    LayoutCachedTop =680
-                    LayoutCachedWidth =5383
-                    LayoutCachedHeight =1025
-                    RowStart =2
-                    RowEnd =2
-                    ColumnStart =1
-                    ColumnEnd =2
-                    Begin
-                        Begin Label
-                            OverlapFlags =93
-                            TextAlign =1
-                            Left =3128
-                            Top =340
-                            Width =1290
-                            Height =345
-                            LeftMargin =44
-                            TopMargin =22
-                            RightMargin =44
-                            BottomMargin =22
-                            Name ="Label6"
-                            Caption ="Username"
-                            BottomPadding =150
-                            LayoutCachedLeft =3128
-                            LayoutCachedTop =340
-                            LayoutCachedWidth =4418
-                            LayoutCachedHeight =685
-                            RowStart =2
-                            RowEnd =2
-                        End
-                    End
-                End
-                Begin TextBox
-                    OverlapFlags =215
-                    TextAlign =1
-                    IMESentenceMode =3
-                    Left =5612
-                    Top =680
-                    Width =2880
-                    Height =344
-                    TabIndex =2
-                    LeftMargin =44
-                    TopMargin =22
-                    RightMargin =44
-                    BottomMargin =22
-                    Name ="password"
-                    ControlSource ="password"
-                    BottomPadding =150
-
-                    LayoutCachedLeft =5612
-                    LayoutCachedTop =680
-                    LayoutCachedWidth =8492
-                    LayoutCachedHeight =1024
-                    RowStart =3
-                    RowEnd =3
-                    ColumnStart =1
-                    ColumnEnd =2
-                    Begin
-                        Begin Label
-                            OverlapFlags =93
-                            TextAlign =1
-                            Left =5622
-                            Top =340
-                            Width =1290
-                            Height =344
-                            LeftMargin =44
-                            TopMargin =22
-                            RightMargin =44
-                            BottomMargin =22
-                            Name ="Label9"
-                            Caption ="Password"
-                            BottomPadding =150
-                            LayoutCachedLeft =5622
-                            LayoutCachedTop =340
-                            LayoutCachedWidth =6912
-                            LayoutCachedHeight =684
-                            RowStart =3
-                            RowEnd =3
-                        End
-                    End
-                End
-                Begin TextBox
-                    OverlapFlags =85
-                    TextAlign =1
-                    IMESentenceMode =3
-                    Left =4468
-                    Top =1303
-                    Width =4035
-                    Height =345
-                    TabIndex =3
-                    LeftMargin =44
-                    TopMargin =22
-                    RightMargin =44
-                    BottomMargin =22
-                    Name ="first_name"
-                    ControlSource ="first_name"
-                    BottomPadding =150
-
-                    LayoutCachedLeft =4468
-                    LayoutCachedTop =1303
-                    LayoutCachedWidth =8503
-                    LayoutCachedHeight =1648
-                    RowStart =4
-                    RowEnd =4
-                    ColumnStart =1
-                    ColumnEnd =2
+                    LayoutCachedLeft =340
+                    LayoutCachedTop =623
+                    LayoutCachedWidth =6576
+                    LayoutCachedHeight =2093
                     Begin
                         Begin Label
                             OverlapFlags =85
-                            TextAlign =1
-                            Left =3118
-                            Top =1303
-                            Width =1290
-                            Height =345
-                            LeftMargin =44
-                            TopMargin =22
-                            RightMargin =44
-                            BottomMargin =22
-                            Name ="Label12"
-                            Caption ="First Name"
-                            BottomPadding =150
-                            LayoutCachedLeft =3118
-                            LayoutCachedTop =1303
-                            LayoutCachedWidth =4408
-                            LayoutCachedHeight =1648
-                            RowStart =4
-                            RowEnd =4
-                        End
-                    End
-                End
-                Begin TextBox
-                    OverlapFlags =85
-                    TextAlign =1
-                    IMESentenceMode =3
-                    Left =4468
-                    Top =1870
-                    Width =4035
-                    Height =330
-                    TabIndex =4
-                    LeftMargin =44
-                    TopMargin =22
-                    RightMargin =44
-                    BottomMargin =22
-                    Name ="last_name"
-                    ControlSource ="last_name"
-                    BottomPadding =150
-
-                    LayoutCachedLeft =4468
-                    LayoutCachedTop =1870
-                    LayoutCachedWidth =8503
-                    LayoutCachedHeight =2200
-                    RowStart =5
-                    RowEnd =5
-                    ColumnStart =1
-                    ColumnEnd =4
-                    Begin
-                        Begin Label
-                            OverlapFlags =85
-                            TextAlign =1
-                            Left =3118
-                            Top =1870
-                            Width =1290
-                            Height =330
-                            LeftMargin =44
-                            TopMargin =22
-                            RightMargin =44
-                            BottomMargin =22
-                            Name ="Label15"
-                            Caption ="Last Name"
-                            BottomPadding =150
-                            LayoutCachedLeft =3118
-                            LayoutCachedTop =1870
-                            LayoutCachedWidth =4408
-                            LayoutCachedHeight =2200
-                            RowStart =5
-                            RowEnd =5
-                        End
-                    End
-                End
-                Begin ComboBox
-                    OverlapFlags =215
-                    IMESentenceMode =3
-                    ColumnCount =2
-                    ListWidth =1440
-                    Left =1530
-                    Top =679
-                    Width =1131
-                    Height =345
-                    TabIndex =5
-                    Name ="Combo46"
-                    ControlSource ="role_id"
-                    RowSourceType ="Table/Query"
-                    RowSource ="SELECT [Role].[role_id], [Role].[role_name] FROM Role ORDER BY [role_id]; "
-                    ColumnWidths ="0;1440"
-
-                    LayoutCachedLeft =1530
-                    LayoutCachedTop =679
-                    LayoutCachedWidth =2661
-                    LayoutCachedHeight =1024
-                    Begin
-                        Begin Label
-                            OverlapFlags =93
-                            Left =1530
-                            Top =340
-                            Width =600
-                            Height =345
-                            Name ="Role_Label"
-                            Caption ="Role"
-                            LayoutCachedLeft =1530
-                            LayoutCachedTop =340
-                            LayoutCachedWidth =2130
-                            LayoutCachedHeight =685
+                            Left =340
+                            Top =283
+                            Width =1065
+                            Height =300
+                            Name ="Label29"
+                            Caption ="Note:"
+                            LayoutCachedLeft =340
+                            LayoutCachedTop =283
+                            LayoutCachedWidth =1405
+                            LayoutCachedHeight =583
                         End
                     End
                 End
@@ -574,3 +429,5 @@ Begin Form
         End
     End
 End
+CodeBehindForm
+' See "RequestF.cls"

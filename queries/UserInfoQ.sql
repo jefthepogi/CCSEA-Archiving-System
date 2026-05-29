@@ -3,7 +3,14 @@
   User.first_name,
   User.last_name,
   Session_Log.login_time,
-  Session_Log.logout_time
+  Session_Log.logout_time,
+  Role.role_name
 FROM
-  [User]
-  INNER JOIN Session_Log ON User.user_id = Session_Log.user_id;
+  Role
+  INNER JOIN (
+    (
+      [User]
+      INNER JOIN Session_Log ON User.user_id = Session_Log.user_id
+    )
+    INNER JOIN AggregrateRecentActivityQ ON Session_Log.session_id = AggregrateRecentActivityQ.MaxOfsession_id
+  ) ON Role.role_id = User.role_id;

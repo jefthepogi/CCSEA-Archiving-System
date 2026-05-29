@@ -3,7 +3,9 @@ VersionRequired =20
 Begin Form
     PopUp = NotDefault
     Modal = NotDefault
+    RecordSelectors = NotDefault
     ControlBox = NotDefault
+    NavigationButtons = NotDefault
     CloseButton = NotDefault
     DividingLines = NotDefault
     AllowDesignChanges = NotDefault
@@ -15,11 +17,11 @@ Begin Form
     GridY =10
     Width =9282
     DatasheetFontHeight =11
-    ItemSuffix =32
-    Left =4065
-    Top =2430
-    Right =13890
-    Bottom =8085
+    ItemSuffix =35
+    Left =3315
+    Top =3030
+    Right =14340
+    Bottom =10920
     RecSrcDt = Begin
         0x37597c10f583e640
     End
@@ -138,10 +140,10 @@ Begin Form
         End
         Begin Section
             Height =5669
-            BackColor =3751056
             Name ="Detail"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
+            BackThemeColorIndex =4
             Begin
                 Begin Image
                     PictureType =2
@@ -164,12 +166,12 @@ Begin Form
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =5159
-                    Top =2154
+                    Top =1927
                     Width =2847
                     Height =285
                     ColumnOrder =0
                     Name ="UsernameField"
-                    Format ="@;\" username\""
+                    Format ="@;\" Enter username\""
                     ConditionalFormat = Begin
                         0x0100000096000000020000000200000000000000000000000100000001000000 ,
                         0xffffff00c0504d000100000000000000020000001a00000001000000a5a5a500 ,
@@ -179,15 +181,34 @@ Begin Form
                     End
 
                     LayoutCachedLeft =5159
-                    LayoutCachedTop =2154
+                    LayoutCachedTop =1927
                     LayoutCachedWidth =8006
-                    LayoutCachedHeight =2439
+                    LayoutCachedHeight =2212
                     ConditionalFormat14 = Begin
                         0x010002000000020000000000000001000000ffffff00c0504d00000000000000 ,
                         0x00000000000000000000000000000000000000010000000000000001000000a5 ,
                         0xa5a500ffffff0017000000490073004e0075006c006c0028005b005500730065 ,
                         0x0072006e0061006d0065004600690065006c0064005d00290000000000000000 ,
                         0x0000000000000000000000000000
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =5159
+                            Top =1587
+                            Width =1155
+                            Height =300
+                            FontSize =9
+                            TopMargin =57
+                            Name ="Label34"
+                            Caption ="Username"
+                            LayoutCachedLeft =5159
+                            LayoutCachedTop =1587
+                            LayoutCachedWidth =6314
+                            LayoutCachedHeight =1887
+                            ForeThemeColorIndex =5
+                            ForeTint =100.0
+                        End
                     End
                 End
                 Begin TextBox
@@ -217,13 +238,32 @@ Begin Form
                         0x010001000000020000000000000001000000ffffff00c0504d00000000000000 ,
                         0x00000000000000000000000000000000000000
                     End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =5159
+                            Top =2324
+                            Width =1125
+                            Height =300
+                            FontSize =9
+                            TopMargin =57
+                            Name ="Label33"
+                            Caption ="Password"
+                            LayoutCachedLeft =5159
+                            LayoutCachedTop =2324
+                            LayoutCachedWidth =6284
+                            LayoutCachedHeight =2624
+                            ForeThemeColorIndex =5
+                            ForeTint =100.0
+                        End
+                    End
                 End
                 Begin CommandButton
                     Default = NotDefault
                     OverlapFlags =85
                     AccessKey =83
                     Left =6009
-                    Top =3174
+                    Top =3401
                     Width =1134
                     Height =352
                     TabIndex =2
@@ -233,15 +273,15 @@ Begin Form
                     UnicodeAccessKey =83
 
                     LayoutCachedLeft =6009
-                    LayoutCachedTop =3174
+                    LayoutCachedTop =3401
                     LayoutCachedWidth =7143
-                    LayoutCachedHeight =3526
+                    LayoutCachedHeight =3753
                 End
                 Begin CommandButton
                     OverlapFlags =85
                     AccessKey =81
                     Left =6009
-                    Top =3685
+                    Top =3912
                     Width =1134
                     Height =352
                     TabIndex =3
@@ -251,15 +291,15 @@ Begin Form
                     UnicodeAccessKey =81
 
                     LayoutCachedLeft =6009
-                    LayoutCachedTop =3685
+                    LayoutCachedTop =3912
                     LayoutCachedWidth =7143
-                    LayoutCachedHeight =4037
+                    LayoutCachedHeight =4264
                 End
                 Begin Image
                     Visible = NotDefault
                     PictureType =2
                     Left =8100
-                    Top =2655
+                    Top =2664
                     Width =340
                     Height =340
                     Name ="EyeIcon"
@@ -267,9 +307,9 @@ Begin Form
                     Picture ="eye"
 
                     LayoutCachedLeft =8100
-                    LayoutCachedTop =2655
+                    LayoutCachedTop =2664
                     LayoutCachedWidth =8440
-                    LayoutCachedHeight =2995
+                    LayoutCachedHeight =3004
                     TabIndex =6
                 End
                 Begin Image
@@ -291,12 +331,14 @@ Begin Form
                 Begin TextBox
                     Locked = NotDefault
                     TabStop = NotDefault
+                    OldBorderStyle =0
                     OverlapFlags =85
                     IMESentenceMode =3
                     Width =57
                     Height =57
                     ColumnOrder =2
                     TabIndex =4
+                    BackColor =3751056
                     Name ="PasswordHidden"
                     InputMask ="Password"
                     ControlTipText ="password"
@@ -309,6 +351,7 @@ Begin Form
 
                     LayoutCachedWidth =57
                     LayoutCachedHeight =57
+                    BackThemeColorIndex =-1
                     ConditionalFormat14 = Begin
                         0x010001000000020000000000000001000000ffffff00c0504d00000000000000 ,
                         0x00000000000000000000000000000000000000

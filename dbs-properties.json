@@ -101,7 +101,7 @@
       "Type": 4
     },
     "NavPane Width": {
-      "Value": 215,
+      "Value": 221,
       "Type": 4
     },
     "Never Cache": {
@@ -119,6 +119,10 @@
     "ProjVer": {
       "Value": 142,
       "Type": 3
+    },
+    "Property Sheet Label Width": {
+      "Value": 2340,
+      "Type": 4
     },
     "QueryTimeout": {
       "Value": 60,
